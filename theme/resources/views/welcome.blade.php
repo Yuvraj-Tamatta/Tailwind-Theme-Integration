@@ -1,43 +1,125 @@
 @extends('layout.masterpage')
 @section('content')
+    <div class="container mx-auto px-2 min-h-[calc(100vh-138px)] relative pb-14">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+            <div class="md:row-span-1 lg:row-span-1 xl:row-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1">
+                <div
+                    class="h-full bg-white dark:bg-slate-800 shadow rounded-md w-full p-4 relative overflow-hidden grid md:gap-4 lg:gap-2 xl:gap-4 md:grid-cols-1 lg:grid-cols-4 my-10">
+                    <div class="md:col-span-4 lg:col-span-2 xl:col-span-4 self-center">
+                        <h3
+                            class="text-slate-800 dark:text-slate-200 text-center text-2xl md:text-2xl lg:text-lg xl:text-2xl font-bold leading-8 py-2 md:py-2 lg:py-1 xl:py-2">
+                            <span class="inline-block xl:block">T-Wind</span> Multi
+                            Application
+                        </h3>
+                        <div
+                            class="text-center text-slate-400 text-base md:text-base lg:text-sm xl:text-base font-medium py-3">
+                            We Design and Develop Clean and High Quality Web Applications
+                        </div>
+                        <div class="text-center py-3 md:mb-3 lg:mb-0 xl:mb-3">
+                            <button
+                                class="px-3 py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">
+                                Buy New
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 lg:col-span-2 xl:col-span-4 block dark:hidden">
+                        <img src="assets/images/widgets/user.png" alt="" class="px-3 mb-2 w-60 mx-auto" />
+                    </div>
+                    <div class="md:col-span-4 lg:col-span-2 xl:col-span-4 hidden dark:block">
+                        <img src="assets/images/widgets/user-light.png" alt="" class="px-3 mb-2 w-60 mx-auto" />
+                    </div>
+                </div>
+                <!--end inner-grid-->
+            </div>
+            <div class="sm:col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-3 my-10">
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="md:col-span-2 lg:col-span-2 xl:col-span-1">
+                        <div
+                            class="bg-white dark:bg-slate-800 shadow rounded-md w-full p-4 relative overflow-hidden bg-[url('../images/widgets/p-1.png')] bg-no-repeat bg-contain">
+                            <div class="flex justify-between xl:gap-x-2 items-cente">
+                                <div
+                                    class="absolute -left-6 -top-4 text-blue-500 p-3 text-center inline-flex items-center justify-center w-32 h-32">
+                                    <i class="ti ti-users text-3xl"></i>
+                                </div>
+                                <div class="self-center ml-auto">
+                                    <h3 class="my-1 font-semibold text-2xl dark:text-slate-200">
+                                        24k
+                                    </h3>
+                                    <p class="text-gray-400 mb-0 font-medium">Sessions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end inner-grid-->
+                    </div>
+                    <div class="md:col-span-2 lg:col-span-2 xl:col-span-1">
+                        <div
+                            class="bg-white dark:bg-slate-800 shadow rounded-md w-full p-4 relative overflow-hidden bg-[url('../images/widgets/p-1.png')] bg-no-repeat bg-contain">
+                            <div class="flex justify-between xl:gap-x-2 items-cente">
+                                <div
+                                    class="absolute -left-6 -top-4 text-blue-500 p-3 text-center inline-flex items-center justify-center w-32 h-32">
+                                    <i class="ti ti-clock text-3xl"></i>
+                                </div>
+                                <div class="self-center ml-auto">
+                                    <h3 class="my-1 font-semibold text-2xl dark:text-slate-200">
+                                        01<span class="text-sm text-slate-500">m</span>03<span
+                                            class="text-sm text-slate-500">s</span>
+                                    </h3>
+                                    <p class="text-gray-400 mb-0 font-medium">Avg.Sessions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end inner-grid-->
+                    </div>
+                    <div class="md:col-span-2 lg:col-span-2 xl:col-span-1">
+                        <div
+                            class="bg-white dark:bg-slate-800 shadow rounded-md w-full p-4 relative overflow-hidden bg-[url('../images/widgets/p-1.png')] bg-no-repeat bg-contain">
+                            <div class="flex justify-between xl:gap-x-2 items-cente">
+                                <div
+                                    class="absolute -left-6 -top-4 text-blue-500 p-3 text-center inline-flex items-center justify-center w-32 h-32">
+                                    <i class="ti ti-activity text-3xl"></i>
+                                </div>
+                                <div class="self-center ml-auto">
+                                    <h3 class="my-1 font-semibold text-2xl dark:text-slate-200">
+                                        $1800
+                                    </h3>
+                                    <p class="text-gray-400 mb-0 font-medium">Bounce Rate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end inner-grid-->
+                    </div>
+                    <div class="md:col-span-2 lg:col-span-2 xl:col-span-1">
+                        <div
+                            class="bg-white dark:bg-slate-800 shadow rounded-md w-full p-4 relative overflow-hidden bg-[url('../images/widgets/p-1.png')] bg-no-repeat bg-contain">
+                            <div class="flex justify-between xl:gap-x-2 items-cente">
+                                <div
+                                    class="absolute -left-6 -top-4 text-blue-500 p-3 text-center inline-flex items-center justify-center w-32 h-32">
+                                    <i class="ti ti-confetti text-3xl"></i>
+                                </div>
+                                <div class="self-center ml-auto">
+                                    <h3 class="my-1 font-semibold text-2xl dark:text-slate-200">
+                                        75000
+                                    </h3>
+                                    <p class="text-gray-400 mb-0 font-medium">
+                                        Goal Completions
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end inner-grid-->
+                    </div>
+                </div>
 
-<div class="relative flex flex-col justify-center min-h-screen overflow-hidden">
-    <div class="w-full  m-auto bg-white dark:bg-slate-800/60 rounded shadow-lg ring-2 ring-slate-300/50 dark:ring-slate-700/50 lg:max-w-md">
-        <div class="text-center p-6 bg-slate-900 rounded-t">
-            <a href="index.html"></a>
-            <h3 class="font-semibold text-white text-4xl mb-1">Register</h3>
+
+            </div>
+
         </div>
 
-        <form class="p-6">
-            <div>
-                <label for="User_Name" class="label">Username</label>
-                <input type="text" id="User_Name" class="form-control dark:bg-slate-800/60 dark:border-slate-700/50" placeholder="Enter Username" required>
-            </div>
-            <div class="mt-4">
-                <label for="email" class="label">Email</label>
-                <input type="email" id="email" class="form-control  dark:bg-slate-800/60 dark:border-slate-700/50" placeholder="Enter Email" required>
-            </div>
-            <div class="mt-4">
-                <label for="password" class="label">Your password</label>
-                <input type="password" id="password" class="form-control  dark:bg-slate-800/60 dark:border-slate-700/50" placeholder="Enter Password"  required>
-            </div>
-            <div class="mt-4">
-                <label for="Confirm_Password" class="label">Confirm Password</label>
-                <input type="password" id="Confirm_Password" class="form-control  dark:bg-slate-800/60 dark:border-slate-700/50" placeholder="Enter Confirm Password"  required>
-            </div>
-            
-           
-            <div class="mt-6">
-                <button
-                    class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
-                    Register
-                </button>
-            </div>
-        </form>
-        <p class="mb-5 text-sm font-medium text-center text-slate-500"> Already have an account ?  <a href="login.html"
-            class="font-medium text-blue-600 hover:underline">Log in</a>
-        </p>
+
+        
     </div>
-</div>
-   
+    
+    {{ $menu }}
+    
+    <!-- footer -->
 @endsection

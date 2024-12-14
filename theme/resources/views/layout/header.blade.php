@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" >
+    <link rel="shortcut icon" href="{{ asset('assets/images/users/avatar-2.jpg') }}" >
     <link rel="stylesheet" href="{{ asset('assets/css/_tabler-icons.css')}}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])

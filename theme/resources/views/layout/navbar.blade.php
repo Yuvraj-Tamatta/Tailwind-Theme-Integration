@@ -50,6 +50,15 @@
                      
                   </li>
 
+                  <li class="dropdown">
+                    <button id="navDashboardLink" data-dropdown-toggle="navDashboard"
+                        class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
+                  {{-- {{ $menu }} --}}
+                
+                    </button>      
+                   
+                </li>
+
                     <li class="dropdown">
                         <button id="navAuthLink" data-dropdown-toggle="navAuth"
                             class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
@@ -87,33 +96,14 @@
                     <li class="dropdown">
                       <button id="navAuthLink" data-dropdown-toggle="navAuth"
                           class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
-                          <i class="ti ti-shield-lock mr-1 pb-1 text-lg"></i> Authentication
+                          <i class="ti ti-shield-lock mr-1 pb-1 text-lg"></i> Dynamic Menu
                           <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
                       </button>
                       <!-- Dropdown menu -->
                       <div id="navAuth"
                           class="dropdown-menu z-10 my-1 hidden w-full list-none divide-y divide-gray-100 rounded bg-gray-800 md:bg-white text-base shadow dark:divide-gray-600 border border-slate-700 md:border-white dark:border-slate-700/50 dark:bg-gray-900 md:w-44 dropdown-menu">
-                          <ul class="py-1">
-                              <li>
-                                  <a href="{{ route('login')}}" class="nav-link  dark:hover:bg-slate-800/70">Log In</a>
-                              </li>
-                              <li>
-                                  <a href="{{ route('register')}}" class="nav-link  dark:hover:bg-slate-800/70">Register</a>
-                              </li>
-                              <li>
-                                  <a href="re-password.html"
-                                      class="nav-link  dark:hover:bg-slate-800/70">Re-Password</a>
-                              </li>
-                              <li>
-                                  <a href="lock-screen.html" class="nav-link  dark:hover:bg-slate-800/70">Lock
-                                      Screen</a>
-                              </li>
-                              <li>
-                                  <a href="404.html" class="nav-link  dark:hover:bg-slate-800/70">Error 404</a>
-                              </li>
-                              <li>
-                                  <a href="500.html" class="nav-link  dark:hover:bg-slate-800/70">Error 500</a>
-                              </li>
+                          <ul class="">
+                           {{ $menu }}
                           </ul>
                       </div>
                   </li>
