@@ -20,3 +20,23 @@ Route::fallback(function () {
     return view('Erro');
 });
 
+Route::get('/admin/user', function(){
+    return view('user');
+});
+
+Route::get('/admin/userprofile', function(){
+    return view('userprofile');
+});
+
+Route::get('/admin/permission', function(){
+    return view('permission');
+});
+
+Route::get('/admin/role', function(){
+    return view('role');
+});
+
+Route::get('/admin/menu', function(){
+    return view('menu');
+});
+
