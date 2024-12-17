@@ -6,7 +6,7 @@ use App\Models\forDynamicMenu;
 use Spatie\Menu\Laravel\Menu;
 use Spatie\Menu\Laravel\Link;
 
-class MenuService
+class MenuService 
 {
     public static function mainMenu()
     {
@@ -18,9 +18,8 @@ class MenuService
         return Menu::build($dynamicArray, function ($menu, $items) {
 
             $menu
-               ->addClass('sortable_list')
-               
-                ->add(Link::to($items['route'], "<i class=\"m-2 " . $items['icon'] . "\"></i>".$items['title']))               
+               ->setAttribute('id', 'sortable_list')               
+                ->add(Link::to($items['route'], "<i class=\"" . $items['icon'] . "\"></i>".$items['title']))               
                 ->addParentClass('data-id', $items['id'])                    
                
                 ->each(function (Link $link) {
@@ -30,6 +29,7 @@ class MenuService
                 });
                
         });
+           
     }
 
     public static function demoMenu()

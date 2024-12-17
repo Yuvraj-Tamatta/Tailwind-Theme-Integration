@@ -96,7 +96,8 @@
                     <li class="dropdown">
                       <button id="navAuthLink" data-dropdown-toggle="navAuth"
                           class="dropdown-toggle flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
-                          <i class="ti ti-shield-lock mr-1 pb-1 text-lg"></i> Dynamic Menu
+                          <i class="ti ti-user mr-1 pb-1 text-lg"></i> Dynamic Menu
+                         
                           <i class="ti ti-chevron-down ml-auto lg:ml-1"></i>
                       </button>
                       <!-- Dropdown menu -->

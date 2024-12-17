@@ -33,7 +33,7 @@
                 </button>
             </div>
         </form>
-        <p class="mb-5 text-sm font-medium text-center text-slate-500"> Already have an account ?  <a href="login.html"
+        <p class="mb-5 text-sm font-medium text-center text-slate-500"> Already have an account ?  <a href="{{ route('login')}}"
             class="font-medium text-blue-600 hover:underline">Log in</a>
         </p>
     </div>

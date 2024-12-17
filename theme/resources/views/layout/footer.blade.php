@@ -26,6 +26,7 @@
       
       <script src="{{ asset('assets/css/simplebar.min.js') }}"></script>
       <script src="{{ asset('assets/js/app.js') }}"></script>
+
       @yield('jSript')
   </body>
   

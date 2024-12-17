@@ -18,17 +18,17 @@
                 <label for="password" class="label">Your password</label>
                 <input type="password" id="password" class="form-control dark:bg-slate-800/60 dark:border-slate-700/50" placeholder="Password">
             </div>
-            <a href="#" class="text-xs text-gray-600 hover:underline">Forget Password?</a>
-           
-            purple
-            <label class="custom-label block dark:text-slate-300">
-                <div class="bg-white dark:bg-slate-700  border border-slate-200 dark:border-slate-600 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
-                  <input type="checkbox" class="hidden" checked>
-                  <i class="fas fa-check hidden text-xs text-purple-500"></i>
-                </div>
-                Purple
-            </label>
-             
+            <a href="#" class="text-xs text-gray-600 hover:underline">Forget Password?</a>          
+        
+            <div class="block mt-3">
+                <label class="custom-label">
+                    <div class="bg-white dark:bg-slate-700 dark:border-slate-600 border border-slate-200 rounded w-4 h-4  inline-block leading-4 text-center -mb-[3px]">
+                      <input type="checkbox" class="">
+                      <i class="fas fa-check  text-xs text-slate-700 dark:text-slate-300"></i>
+                    </div>
+                    <span class="text-sm text-slate-500 font-medium">Remember me</span>                             
+                </label>
+            </div>                   
                
             <div class="mt-6">
                 <button
@@ -37,7 +37,7 @@
                 </button>
             </div>
         </form>
-        <p class="mb-5 text-sm font-medium text-center text-slate-500"> Don't have an account? <a href="register.html"
+        <p class="mb-5 text-sm font-medium text-center text-slate-500"> Don't have an account? <a href="{{ route('register')}}"
             class="font-medium text-blue-600 hover:underline">Sign up</a>
         </p>
     </div>

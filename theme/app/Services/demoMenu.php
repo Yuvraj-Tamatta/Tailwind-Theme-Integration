@@ -15,10 +15,10 @@ class demoMenu{
             $menu->addClass('shadow p-4 border');
             $menu->add(Link::to($item['route'], "<i class=\"".$item['icon']. "\".></i>" .$item['title']));
             $menu->each(function(Link $link){ 
-                $link->addClass('text-green-600 text-4xl py-4 rounded-full');
-                $link->addParentClass('my-3 shadow border bg-yellow-400 text-center');
+                $link->addClass('p-4 ms-2');
+                $link->addParentClass('text-xl my-1 shadow border bg-gray-300 rounded-full');
             });
-            $menu->prepend("<b class='text-2xl '>This Menu Came from DataBase</b>");
+           
            
         });
        
