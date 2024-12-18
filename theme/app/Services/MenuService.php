@@ -20,7 +20,7 @@ class MenuService
             $menu
                ->setAttribute('id', 'sortable_list')               
                 ->add(Link::to($items['route'], "<i class=\"" . $items['icon'] . "\"></i>".$items['title']))               
-                ->addParentClass('data-id', $items['id'])                    
+                ->addParentClass('data-id', $items['id'])               
                
                 ->each(function (Link $link) {
 
@@ -31,15 +31,7 @@ class MenuService
         });
            
     }
-
-    public static function demoMenu()
-    {
-        return Menu::new()
-            ->addClass('bg-red-500')
-            ->link('/login', 'Login Page')->id('tap')->addClass('p-4 text-2xl')
-            ->wrap('div', ['class' => 'yuvraj']);
-    }
-
+ 
     public static function subMenu()
     {
         return Menu::new()
@@ -58,10 +50,12 @@ class MenuService
             );
     }
 
-    public static function macroMenu(){
-        Menu::macro('main', function(){
-            return Menu::new()
-            ->action('MenuController@index', 'home');
-        });
+    public static function practice(){
+        return Menu::new()
+        ->add(Link::to('/', "Home"))
+        ->add(Link::to('/about', "About"));
+        
     }
+
+    
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\menuController;
+use App\Http\Controllers\MenuController as ControllersMenuController;
 use App\Http\Controllers\permissionController;
 use App\Http\Controllers\roleController;
 use App\Http\Controllers\userController;
@@ -8,9 +9,7 @@ use App\Http\Controllers\userProfileController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function(){
-    return view('welcome');
-});
+Route::get('/', [ControllersMenuController::class, 'index']);
 
 Route::get('/login', function () {
     return view('login');

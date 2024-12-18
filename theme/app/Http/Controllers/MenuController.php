@@ -2,23 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\forDynamicMenu;
-use App\Services\demoMenu;
-use App\Services\MenuService;
 use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
     public function index(){
-        // dd(forDynamicMenu::all());
-        $menu = MenuService::mainMenu();
-        $demoMenu = MenuService::demoMenu();
-        $submenu = MenuService::submenu();
-        $macromenu = MenuService::mainMenu();
-
-        $mymenu = demoMenu::menu();
+        // // dd(forDynamicMenu::all());
+        // $menu = MenuService::mainMenu();
+        // $practice = MenuService::practice();
+        // // $submenu = MenuService::submenu();
+        // $dm = demoMenu::myMenu();       
+        // return view('welcome',['mymenu'=> $practice]);
        
-        return view('welcome',compact('menu', 'demoMenu','submenu', 'macromenu', 'mymenu'));
+        
+        return view('welcome');
+
     }
 
 

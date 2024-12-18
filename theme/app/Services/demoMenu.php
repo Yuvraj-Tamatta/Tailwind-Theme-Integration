@@ -23,5 +23,11 @@ class demoMenu{
         });
        
     }
+
+    public static function myMenu(){
+        return Menu::new()
+                ->link('/', "home")
+                ->link('/about', "About");
+    }
 }
 ?>
